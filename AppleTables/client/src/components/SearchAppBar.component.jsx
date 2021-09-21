@@ -6,6 +6,7 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import Button from '@material-ui/core/Button';
+import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -69,7 +70,8 @@ export default function SearchAppBar() {
     setSearch(e.target.value)
     console.log(e.target.value);
   }
-const handleClcik=()=>{
+const handleClick=(search)=>{
+  // http://localhost:3009/v1/allcourses/
   
 }
 
@@ -93,7 +95,7 @@ const handleClcik=()=>{
             />
             
           </div>
-          <Button variant="contained" color="primary" onClick={handleClcik}>
+          <Button variant="contained" color="primary" onClick={handleClick}>
               <SearchIcon />
             </Button> 
         </Toolbar>

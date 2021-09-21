@@ -87,7 +87,7 @@ export default function CoursesList2() {
   };
 
   return (
-    <Paper className={classes.root}>
+   <Paper className={classes.root}>
    <SearchAppBar/>
       <TableContainer className={classes.container}>
         <Table stickyHeader aria-label="sticky table">
